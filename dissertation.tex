@@ -1,0 +1,70 @@
+\documentclass{dissertation}
+
+\begin{document}
+
+%% Specify the title and author of the thesis. This information will be used on
+%% the title page (in title/title.tex) and in the metadata of the final PDF.
+\title[Algorithm to estimate the minimal time path for Laser Sailing ]{Effects of time steps on the opimal path}
+\author{Gabriela}{Pardo Arteaga}
+
+%% Use Roman numerals for the page numbers of the title pages and table of
+%% contents.
+\frontmatter
+
+\include{title/title}
+
+%% The (optional) dedication can be used to thank someone or display a
+%% significant quotation.
+\dedication{\epigraph{Curiosity is the starling unexpectedness \\ of all beginnings.}{Hannah Arendt}}
+
+\tableofcontents
+
+\include{ch/0summary}
+
+\include{preface/preface}
+
+%% Use Arabic numerals for the page numbers of the chapters.
+\mainmatter
+
+%% Turn on thumb indices.
+\thumbtrue
+
+%\include{chapter-1/chapter-1}
+\include{ch/1introduction}
+\include{ch/2SailinBoatModel}
+\include{ch/3WeatherInt}
+\include{ch/4OptimizerAlgorithm}
+\include{ch/5SimulationsResults}
+\include{ch/6conclusions}
+
+
+
+
+
+%\include{conclusion/conclusion}
+%\include{epilogue/epilogue}
+%\include{acks/acks}
+
+%% Use letters for the chapter numbers of the appendices.
+\appendix
+
+%\include{appendix-a/appendix-a}
+
+%% Turn off thumb indices for unnumbered chapters.
+\thumbfalse
+
+%\include{cv/cv}
+%\include{publications/publications}
+
+\printglossary[type=\acronymtype]
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\newpage
+
+
+%\bibliographystyle{ieeetr} %ieeetr %alpha %apalike unsrt
+%\bibliography{ch/thesisref}
+%\addcontentsline{toc}{chapter}{Bibliography}
+\ireferences{dissertation}
+
+\end{document}
+
